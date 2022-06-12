@@ -40,13 +40,10 @@ Na tela do curso, existirá um botão que permitirá a edição dos seguintes da
 - Turno 
 - Materiais (Arquivos que disponibilizados para o **Aluno**)
 - Eventos (Aulas marcadas pelo **Professor**)
-- Tarefas (**##RF004**)
-- Alunos (**RF005**)
+- Tarefas 
+- Alunos 
 
 Ao clicar em salvar, o sistema irá validar as informações para checar se nenhuma está vazia ou inválida.
-
-Os **Professores** poderão agendar Eventos online que irão notificar todos os **Alunos** envolvidos no curso sobre quando o mesmo irá ocorrer.
-Os **Professores** poderão adicionar todo tipo de arquivo digital a lista de materiais e os **Alunos** irão poder baixar os mesmos.
 
 **Alunos** poderão somente vizualizar as informações do curso, baixar materiais e interagir com as tarefas para ler e realizar entregas.
 
@@ -76,26 +73,23 @@ Alta | Baixa | Elaborado | 1 | Felipe de Almeida, Stephanie Pinheiro Brazil
 Alta | Baixa | Revisado | 1 | Vinicius Rossoni Wagner, Tiago Ordesto Machado
 Alta | Baixa | Aprovado | 1 | Ivo Aurélio da Silva
 
-## RF004 Tarefas
+## RF004 Cadastrar Tarefa no curso
 **Coordenadores** e **Professores** podem adicionar tarefas em seus cursos. Uma terefa deve solicitar, obrigatoriamente, as seguintes informações:
 - Nome
 - Pontos
 - Vencimento
+- Materiais
 - Forma de entrega
 - Descrição
 
-Ao salvar a nova tarefa a mesma é adicionada a lista de tarefas na tela de cursos (**RF002**)
+Ao salvar a nova tarefa a mesma é adicionada a lista de tarefas na tela de cursos
 
 Caso um **Aluno** esteja vinculado ao curso:
 - O **Aluno** deverá receber notificações alertando o sobre a tarefa a nova tarefa.
 - O **Aluno** deverá receber um lembrete no dia da entrega
 - O **Aluno** deverá poder vizualizar em seu calendário a tarefa e clicar para ir a tela de tarefa.
 
-Um **Coordenador** ou **Professor** também poderão clicar em uma tarefa na tela de cursos (**RF002**) para entrar na tela de vizualização da tarefa que deverá exibir nome e descrição da mesma, assim como a lista de alunos juntamente dos arquivos/textos enviados para a tarefa. Para cada aluno poderá ser adicionada uma nota a tarefa.
-
-O **Aluno** ao entrar na tela de tarefas irá vizualizar o nome, descrição da tarefa juntamente do botão "enviar" que irá permitir a adição de um arquivo ou texto.
-
-Caso o **Coordenador** ou **Professor** já tenham corrigido a tarefa, o **Aluno** irá receber uma notificação e a mesma será removida do calendário do mesmo. O **Aluno** também irá poder vizualizar na tela de tarefa a sua pontuação.
+Um **Coordenador** ou **Professor** também poderão clicar em uma tarefa na tela de cursos para entrar na tela de vizualização da tarefa que deverá exibir nome e descrição da mesma, assim como a lista de alunos juntamente dos arquivos/textos enviados para a tarefa. Para cada aluno poderá ser adicionada uma nota a tarefa.
 
 | Priridade | Complexidade | Status | Versão | Autor | 
 | :--- | :---: | :---: | :---: | :---: |
@@ -103,8 +97,29 @@ Alta | Média | Elaborado | 1 | Felipe de Almeida, Stephanie Pinheiro Brazil
 Alta | Média | Revisado | 1 | Vinicius Rossoni Wagner, Tiago Ordesto Machado
 Alta | Média | Aprovado | 1 | Ivo Aurélio da Silva
 
-## RF005 Alunos
-Após realizar matrícula (**RF006**), o **Aluno** terá acesso ao canvas do aluno que possui uma tela onde o mesmo pode editar as suas informações:
+## RF005 Entregar Tarefa
+**Alunos** podem fazer upload de um arquivo ou adicionar um texto para realizar a entrega de uma Tarefa.
+
+Ao ser entregue, deverá ser notificado para o **Professor** responsável via e-mail e sistema que a tarefa do **Aluno** foi concluída com sucesso e a mesma removida do seu calendário.
+
+
+| Priridade | Complexidade | Status | Versão | Autor | 
+| :--- | :---: | :---: | :---: | :---: |
+Média | Baixa | Elaborado | 1 | Felipe de Almeida, Stephanie Pinheiro Brazil
+Média | Baixa | Revisado | 1 | Vinicius Rossoni Wagner, Tiago Ordesto Machado
+Média | Baixa | Aprovado | 1 | Ivo Aurélio da Silva
+
+## RF006 Avaliar Tarefa
+O **Coordenador** ou **Professor** de um curso deverão poder avaliar uma tarefa atribuindo uma pontuação a mesma. O **Aluno** deverá ser notificado que a sua tarefa foi corrigida.
+
+| Priridade | Complexidade | Status | Versão | Autor | 
+| :--- | :---: | :---: | :---: | :---: |
+Média | Baixa | Elaborado | 1 | Felipe de Almeida, Stephanie Pinheiro Brazil
+Média | Baixa | Revisado | 1 | Vinicius Rossoni Wagner, Tiago Ordesto Machado
+Média | Baixa | Aprovado | 1 | Ivo Aurélio da Silva
+
+## RF007 Editar Perfil Aluno
+Após realizar matrícula, o **Aluno** terá acesso ao canvas do aluno que possui uma tela onde o mesmo pode editar as suas informações:
 **Contato **
 - Nome
 - Nome de Exibição
@@ -121,19 +136,14 @@ _O **Aluno** poderá ativar ou desativar as seguintes notificações_
 - Notificar evento de curso criado
 - Notificar material adicionado a curso
 
-O **Aluno** também podera vizualizar os cursos do qual faz parte juntamente do seu calendário. 
-O Calendário deverá exibir todas as tarefas de todos os cursos assim como feriados e eventos da instituição.
-
-
 | Prioridade | Complexidade | Status | Versão | Autor | 
 | :--- | :---: | :---: | :---: | :---: |
 Alta | Baixa | Elaborado | 1 | Felipe de Almeida, Stephanie Pinheiro Brazil
 Alta | Baixa | Revisado | 1 | Vinicius Rossoni Wagner, Tiago Ordesto Machado
 Alta | Baixa | Aprovado | 1 | Ivo Aurélio da Silva
 
-## RF006 Realizar Matrícula
-Um **usuário anonimo** ao escolher um curso no na tela de Buscar Cursos (**RF003**) poderá realizar sua matrícula no mesmo.
-
+## RF008 Realizar Matrícula
+Um **usuário anonimo** ao escolher um curso no na tela de Buscar Cursos poderá realizar sua matrícula no mesmo.
 
 Para realizar a matrícula sera solicitada, de forma obrigatória, as seguintes informações:
 - Nome Completo
@@ -149,7 +159,7 @@ Também será exibido para o **Aluno** informações para o aluno, datas de aula
 
 Os dados irão ser válidados quando o **Aluno** clicar no botão **Prosseguir com a Matrícula**, que irá direcionar o **Aluno** para uma tela que irá solicitar que o mesmo cheque o e-mail para dar prosseguimento.
 
-Após preencher os dados será enviado um e-mail contendo as informações para pagamento pagamento e um boleto (**RF008**) para pagamento.
+Após preencher os dados será enviado um e-mail contendo as informações para pagamento pagamento e um boleto para pagamento.
 
 Após o **Aluno** realizar o pagamento da primeira parcela irá receber um e-mail contendo o login e senha provisória para o mesmo poder prosseguir com o curso.
 
@@ -162,8 +172,8 @@ Alta | Alta | Elaborado | 1 | Felipe de Almeida, Stephanie Pinheiro Brazil
 Alta | Alta | Revisado | 1 | Vinicius Rossoni Wagner, Tiago Ordesto Machado
 Alta | Alta | Aprovado | 1 | Ivo Aurélio da Silva
 
-## RF007 Aula Online
-O sistema deverá permitir que um professor agende um **Evento** (**RF002**) contendo o nome e a data do mesmo. Na data do evento, o sistema deverá criar e disponibilizar uma sala online onde tanto **Professores** quanto **Alunos** consigam conectar e utilizar seus periféricos de vídeo, áudio e captura de áudio para se comunicar por vídeo e voz.
+## RF009 Aula Online
+O sistema deverá permitir que um professor agende um **Evento** contendo o nome e a data do mesmo. Na data do evento, o sistema deverá criar e disponibilizar uma sala online onde tanto **Professores** quanto **Alunos** consigam conectar e utilizar seus periféricos de vídeo, áudio e captura de áudio para se comunicar por vídeo e voz.
 
 A funcionalidade de Aula Online deverá suportar as seguintes ações para todos os usuários:
 - Mutar ou desmutar a si mesmo
@@ -182,13 +192,96 @@ Antes de um usuário conectar, deverá ser perguntado ao usuário se os perifér
 
 | Prioridade | Complexidade | Status | Versão | Autor | 
 | :--- | :---: | :---: | :---: | :---: |
+Alta | Média | Elaborado | 1 | Felipe de Almeida, Stephanie Pinheiro Brazil
+Alta | Média | Revisado | 1 | Vinicius Rossoni Wagner, Tiago Ordesto Machado
+Alta | Média | Aprovado | 1 | Ivo Aurélio da Silva
+
+## RF010 Emição de Boleto
+O sistema deverá contar com um sistema de pagamento que permita a emissão de boletos de forma manual pelos **Funcionários** ou automática para os **Alunos**.
+
+A funcionalidade de emissão de boleto poderá acontecer nas seguintes situações:
+- Quando o **Aluno** realizar a matrícula, devera ser emitido de forma automática uma cobrança com o custo do curso para o e-mail de destino.
+- Quando o **Funcionário** enviar uma cobrança de forma manual para um **Aluno**.
+- Quando o método de pagamento do **Aluno** for débito automático, será enviada uma cobrança de forma automática.
+
+Quando o **Aluno** realizar o pagamento, o sistema deverá atualizar a cobrança do boleto paga pago.
+
+Caso o boleto não seja pago na data ou o pagamento falhe, deverá ser reenviado o boleto da cobrança com o custo da multa definida pelo **Funcionário** para o **Aluno** via e-mail. Caso o boleto falhe em ser pago novamente a mátricula irá ser cancelada ou o curso irá ser automáticamente trancado para o **Aluno**.
+
+| Prioridade | Complexidade | Status | Versão | Autor | 
+| :--- | :---: | :---: | :---: | :---: |
+Alta | Média | Elaborado | 1 | Felipe de Almeida, Stephanie Pinheiro Brazil
+Alta | Média | Revisado | 1 | Vinicius Rossoni Wagner, Tiago Ordesto Machado
+Alta | Média | Aprovado | 1 | Ivo Aurélio da Silva
+
+## RF011 Emitir carta de cobrança para clientes inadiplemntes 
+Para todo **Aluno** que esteja inadiplente, deverá ser possível a emissão da carta de cobrança através do sistema. O resultado da emissão será a carta impressa, que será posteriormente despachada por correrios ou outro agende de entrega.
+
+Os critérios para definir se um cliente é ou não inadiplente devem estar cadastrados no sistema utilizando regras de negócio específicas. Nem todo cliente com pagamento em atraso será considerado inadimplente, pos deverá ser levado em consideração o score de crédito do cliente, sua renda mensal, patrimônio etc.
+
+| Prioridade | Complexidade | Status | Versão | Autor | 
+| :--- | :---: | :---: | :---: | :---: |
+Média | Média | Elaborado | 1 | Felipe de Almeida, Stephanie Pinheiro Brazil
+Média | Média | Revisado | 1 | Vinicius Rossoni Wagner, Tiago Ordesto Machado
+Média | Média | Aprovado | 1 | Ivo Aurélio da Silva
+
+## RF012 Fazer upload de material
+O **Coordenador** ou **Professor** poderá fazer upload de materiais de qualquer tipo para um curso. O mesmo irá ser listado nos materiais disponíveis de um curso.
+
+O **Aluno** deverá ser notificado sempre que um material relativo a um curso do qual é membro for adicionado.
+
+| Prioridade | Complexidade | Status | Versão | Autor | 
+| :--- | :---: | :---: | :---: | :---: |
+Média | Média | Elaborado | 1 | Felipe de Almeida, Stephanie Pinheiro Brazil
+Média | Média | Revisado | 1 | Vinicius Rossoni Wagner, Tiago Ordesto Machado
+Média | Média | Aprovado | 1 | Ivo Aurélio da Silva
+
+## RF013 Agendar eventos
+O **Coordenador** ou **Professor** podem agendar eventos dentro de seus cursos.
+
+O evento irá solicitar, obrigatóriamente, as seguintes informações:
+- Nome
+- Data
+- Tipo (Presencial, Remoto)
+- Local (se presencial, endereço; se remoto, link da vídeo chamada)
+- Descrição
+
+Quando o evento for criado:
+- Deverá aparecer no calendário de todos os alunos do curso.
+- Deverá notificar todos os alunos do curso.
+
+
+| Prioridade | Complexidade | Status | Versão | Autor | 
+| :--- | :---: | :---: | :---: | :---: |
+Média | Média | Elaborado | 1 | Felipe de Almeida, Stephanie Pinheiro Brazil
+Média | Média | Revisado | 1 | Vinicius Rossoni Wagner, Tiago Ordesto Machado
+Média | Média | Aprovado | 1 | Ivo Aurélio da Silva
+
+## RF014 Gerar relatórios
+**Funcionários** podem gerar relatórios para vizualizar dados sobre o sistema
+- Númmero de alunos por curso
+- Número de professores por curso
+- Número de usuários utilizando o sistema agora
+- Número de alunos inadimplentes
+- Número de matrículas por período
+- Comparação quantidade de alunos por mês, dia, ou ano
+
+| Prioridade | Complexidade | Status | Versão | Autor | 
+| :--- | :---: | :---: | :---: | :---: |
+Baixa | Média | Elaborado | 1 | Felipe de Almeida, Stephanie Pinheiro Brazil
+Baixa | Média | Revisado | 1 | Vinicius Rossoni Wagner, Tiago Ordesto Machado
+Baixa | Média | Aprovado | 1 | Ivo Aurélio da Silva
+
+## RF015 Monitorar saúde
+**Funcionários** deverão poder monitorar o estado de saúde de todos os usuários e a sua localização dentro da instituição via sistema para conseguir responder melhor a crises em função da pandemia.
+
+Ao identificar uma pessoa contaminada, deverá ser emitido um alerta aos responsáveis pelo monitoramento para isolar todos os que estiveram próximos da pessoa. Todas as pessoas que tiveram contato deverão receber um alerta via e-mail solicitando teste e informando afastamento temporário até o resultado do teste surgir.
+
+| Prioridade | Complexidade | Status | Versão | Autor | 
+| :--- | :---: | :---: | :---: | :---: |
 Alta | Alta | Elaborado | 1 | Felipe de Almeida, Stephanie Pinheiro Brazil
 Alta | Alta | Revisado | 1 | Vinicius Rossoni Wagner, Tiago Ordesto Machado
 Alta | Alta | Aprovado | 1 | Ivo Aurélio da Silva
-
-## RF008 Emitir Boleto
-O sistema deverá contar com uma 
-
 
 
 # 2. Especificação de Requisitos Não Funcionais
