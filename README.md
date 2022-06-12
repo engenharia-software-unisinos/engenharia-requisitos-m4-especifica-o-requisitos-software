@@ -1,10 +1,10 @@
 # Instituição ABC - Especificação de Requisitos
 
-| Nome do Projeto | Responsável | Data e Versão |
-| :--- | :---: | :---: |
-**Instituição ABC** | Tiago Ordesto Machado, Felipe Rodrigues de Almeida, Stephanie Pinheiro Brazil, Vinicius Rossoni Wagner e Ivo Aurélio da Silva | **Data Versão:** 11/06/2022
-
 # 1. Especificação de Requisitos Funcionais
+
+| Nome do Projeto | Responsável | Descrição | Data e Versão |
+| :--- | :---: | :---: | :---: |
+**Instituição ABC - Requisitos Funcionais** | Tiago Ordesto Machado, Felipe Rodrigues de Almeida, Stephanie Pinheiro Brazil, Vinicius Rossoni Wagner e Ivo Aurélio da Silva | Criação do documento | 11/06/2022
 
 ## RF001 - Tipos de usuário
 
@@ -16,7 +16,9 @@ O sistema deverá disponibilizar uma interface para possibilitar a manutenção 
 
 | Prioridade | Complexidade | Status | Versão | Autor | 
 | :--- | :---: | :---: | :---: | :---: |
-Alta | Alta | Aprovado | 1 | Felipe de Almeida
+Alta | Alta | Elaborado | 1 | Felipe de Almeida, Stephanie Pinheiro Brazil
+Alta | Alta | Revisado | 1 | Vinicius Rossoni Wagner, Tiago Ordesto Machado
+Alta | Alta | Aprovado | 1 | Ivo Aurélio da Silva
 
 ## RF002 - Cursos
 **Funcionários** e **Coordenadores** podem cadastrar um um curso ou a edição de um existente. 
@@ -50,7 +52,9 @@ Os **Professores** poderão adicionar todo tipo de arquivo digital a lista de ma
 
 | Prioridade | Complexidade | Status | Versão | Autor | 
 | :--- | :---: | :---: | :---: | :---: |
-Alta | Médioa | Aprovado | 1 | Felipe de Almeida
+Alta | Média | Elaborado | 1 | Felipe de Almeida, Stephanie Pinheiro Brazil
+Alta | Média | Revisado | 1 | Vinicius Rossoni Wagner, Tiago Ordesto Machado
+Alta | Média | Aprovado | 1 | Ivo Aurélio da Silva
 
 ## RF003 - Buscar curso
 
@@ -68,7 +72,9 @@ Exibir uma notificação na tela informando que houve uma falha em buscar os cur
 
 | Prioridade | Complexidade | Status | Versão | Autor | 
 | :--- | :---: | :---: | :---: | :---: |
-Alta | Baixa | Aprovado | 1 | Felipe de Almeida
+Alta | Baixa | Elaborado | 1 | Felipe de Almeida, Stephanie Pinheiro Brazil
+Alta | Baixa | Revisado | 1 | Vinicius Rossoni Wagner, Tiago Ordesto Machado
+Alta | Baixa | Aprovado | 1 | Ivo Aurélio da Silva
 
 ## RF004 Tarefas
 **Coordenadores** e **Professores** podem adicionar tarefas em seus cursos. Uma terefa deve solicitar, obrigatoriamente, as seguintes informações:
@@ -93,7 +99,9 @@ Caso o **Coordenador** ou **Professor** já tenham corrigido a tarefa, o **Aluno
 
 | Priridade | Complexidade | Status | Versão | Autor | 
 | :--- | :---: | :---: | :---: | :---: |
-Alta | Média | Aprovado | 1 | Felipe de Almeida
+Alta | Média | Elaborado | 1 | Felipe de Almeida, Stephanie Pinheiro Brazil
+Alta | Média | Revisado | 1 | Vinicius Rossoni Wagner, Tiago Ordesto Machado
+Alta | Média | Aprovado | 1 | Ivo Aurélio da Silva
 
 ## RF005 Alunos
 Após realizar matrícula (**RF006**), o **Aluno** terá acesso ao canvas do aluno que possui uma tela onde o mesmo pode editar as suas informações:
@@ -119,7 +127,9 @@ O Calendário deverá exibir todas as tarefas de todos os cursos assim como feri
 
 | Prioridade | Complexidade | Status | Versão | Autor | 
 | :--- | :---: | :---: | :---: | :---: |
-Alta | Baixa | Aprovado | 1 | Felipe de Almeida
+Alta | Baixa | Elaborado | 1 | Felipe de Almeida, Stephanie Pinheiro Brazil
+Alta | Baixa | Revisado | 1 | Vinicius Rossoni Wagner, Tiago Ordesto Machado
+Alta | Baixa | Aprovado | 1 | Ivo Aurélio da Silva
 
 ## RF006 Realizar Matrícula
 Um **usuário anonimo** ao escolher um curso no na tela de Buscar Cursos (**RF003**) poderá realizar sua matrícula no mesmo.
@@ -139,7 +149,7 @@ Também será exibido para o **Aluno** informações para o aluno, datas de aula
 
 Os dados irão ser válidados quando o **Aluno** clicar no botão **Prosseguir com a Matrícula**, que irá direcionar o **Aluno** para uma tela que irá solicitar que o mesmo cheque o e-mail para dar prosseguimento.
 
-Após preencher os dados será enviado um e-mail contendo as informações para pagamento pagamento e um boleto para pagamento.
+Após preencher os dados será enviado um e-mail contendo as informações para pagamento pagamento e um boleto (**RF008**) para pagamento.
 
 Após o **Aluno** realizar o pagamento da primeira parcela irá receber um e-mail contendo o login e senha provisória para o mesmo poder prosseguir com o curso.
 
@@ -148,7 +158,9 @@ Em caso de falha no pagamento, o **Aluno** irá receber um e-mail avisando que o
 
 | Prioridade | Complexidade | Status | Versão | Autor | 
 | :--- | :---: | :---: | :---: | :---: |
-Alta | Alta | Aprovado | 1 | Felipe de Almeida
+Alta | Alta | Elaborado | 1 | Felipe de Almeida, Stephanie Pinheiro Brazil
+Alta | Alta | Revisado | 1 | Vinicius Rossoni Wagner, Tiago Ordesto Machado
+Alta | Alta | Aprovado | 1 | Ivo Aurélio da Silva
 
 ## RF007 Aula Online
 O sistema deverá permitir que um professor agende um **Evento** (**RF002**) contendo o nome e a data do mesmo. Na data do evento, o sistema deverá criar e disponibilizar uma sala online onde tanto **Professores** quanto **Alunos** consigam conectar e utilizar seus periféricos de vídeo, áudio e captura de áudio para se comunicar por vídeo e voz.
@@ -170,8 +182,140 @@ Antes de um usuário conectar, deverá ser perguntado ao usuário se os perifér
 
 | Prioridade | Complexidade | Status | Versão | Autor | 
 | :--- | :---: | :---: | :---: | :---: |
-Alta | Alta | Aprovado | 1 | Felipe de Almeida
+Alta | Alta | Elaborado | 1 | Felipe de Almeida, Stephanie Pinheiro Brazil
+Alta | Alta | Revisado | 1 | Vinicius Rossoni Wagner, Tiago Ordesto Machado
+Alta | Alta | Aprovado | 1 | Ivo Aurélio da Silva
 
-## RF008
+## RF008 Emitir Boleto
+O sistema deverá contar com uma 
+
+
 
 # 2. Especificação de Requisitos Não Funcionais
+
+| Nome do Projeto | Responsável | Descrição | Data e Versão |
+| :--- | :---: | :---: | :---: |
+**Instituição ABC - Requisitos Não Funcionais** | Tiago Ordesto Machado, Felipe Rodrigues de Almeida, Stephanie Pinheiro Brazil, Vinicius Rossoni Wagner e Ivo Aurélio da Silva | Criação do documento | 11/06/2022
+
+## Usabilidade
+## RNF001 - Design Responsivo nas interfaces gráficas
+
+O sistema da Instituição ABC será construído para rodar em ambiente web. Deverá possuir um design responsivo (https://en.wikipedia.org/wiki/Responsive_web_design).
+
+A interface do sistema deverá se comportar adequadamente independente do front-end que será utilizado para acesso - Browser, Smartphone ou Tablet.
+
+Este requisito será validado utilizando-se de testes de usabilidade. 
+
+| Prioridade | Complexidade | Status | Versão | Autor | 
+| :--- | :---: | :---: | :---: | :---: |
+Baixa | Baixa | Elaborado | 1 | Felipe de Almeida, Stephanie Pinheiro Brazil
+Baixa | Baixa | Revisado | 1 | Vinicius Rossoni Wagner, Tiago Ordesto Machado
+Baixa | Baixa | Aprovado | 1 | Ivo Aurélio da Silva
+
+## RNF002 - Velocidade de Uso de Interface
+
+O sistema da Instituição ABC deverá ter um tempo de respostá de menos de 0.200ms para a tela ficar interágivel. Elementos que necessitem de mais tempo para carregarem deverão ser carregados em segundo plano.
+
+Este requisito será validado utilizando-se de testes de usabilidade e usando a ferramenta do Google Developers, Page Speed insights (https://pagespeed.web.dev/) com o objetivo de atender o modelo de usabilidade da ISO/IEC 9126.
+
+| Prioridade | Complexidade | Status | Versão | Autor | 
+| :--- | :---: | :---: | :---: | :---: |
+Baixa | Baixa | Elaborado | 1 | Felipe de Almeida, Stephanie Pinheiro Brazil
+Baixa | Baixa | Revisado | 1 | Vinicius Rossoni Wagner, Tiago Ordesto Machado
+Baixa | Baixa | Aprovado | 1 | Ivo Aurélio da Silva
+
+## RNF003 - Facilidade de Uso
+
+O sistema da Instituição ABC deverá ser de fácil utilização, todas as tarefas devem ser simples e intuitivas de serem concluídas por todos os usuários no primeiro uso.
+
+Este requisito será validado utilizando-se de testes de usabilidade com o objetivo de atender o modelo de usabilidade da ISO/IEC 9126.
+
+| Prioridade | Complexidade | Status | Versão | Autor | 
+| :--- | :---: | :---: | :---: | :---: |
+Média | Baixa | Elaborado | 1 | Felipe de Almeida, Stephanie Pinheiro Brazil
+Média | Baixa | Revisado | 1 | Vinicius Rossoni Wagner, Tiago Ordesto Machado
+Média | Baixa | Aprovado | 1 | Ivo Aurélio da Silva
+
+## RNF004 - Compatibilidade com sistemas operacionais Windows, Mac e Linux
+O sistema deverá suportar as seguintes versões de cada sistema operacional:
+**Windows**
+- XP
+- Vista 7
+- Vista 8
+- Windows 10
+- Windows 11
+**Linux**
+- 16.04
+- 20.04
+- 21.04
+**Mac**
+- Monteray
+- Big Sur
+- Catalina
+- High Sierra
+- Sierra
+- El Captain
+- Yosemite
+
+Este requisito será atendido por uma série de testes de usabilidade e deverá garantir que todos os testes passem em todos os sistemas para garantir a retrocompatibilidade com os sistemas operacionais.
+
+| Prioridade | Complexidade | Status | Versão | Autor | 
+| :--- | :---: | :---: | :---: | :---: |
+Alta | Alta | Elaborado | 1 | Felipe de Almeida, Stephanie Pinheiro Brazil
+Alta | Alta | Revisado | 1 | Vinicius Rossoni Wagner, Tiago Ordesto Machado
+Alta | Alta | Aprovado | 1 | Ivo Aurélio da Silva
+
+## Confiabilidade
+## RNF005 - Tempo de Recuperação
+O sistema da Instituição ABC deverá possuir monitoramento da saúde do sistema para identificar quando o sistema está indisponível ou com problemas em suas dependências. 
+
+Ao identificar com sucesso um problema, o sistema deverá ser reiniciado.
+
+Este requisito será validado utilizando-se de testes de carga e testes de integração que irão forçar situações de exeção colocando o servidor em estresse com o objetivo de atender o modelo de confiabilidade da ISO/IEC 9126.
+
+| Prioridade | Complexidade | Status | Versão | Autor | 
+| :--- | :---: | :---: | :---: | :---: |
+Alta | Alta | Elaborado | 1 | Felipe de Almeida, Stephanie Pinheiro Brazil
+Alta | Alta | Revisado | 1 | Vinicius Rossoni Wagner, Tiago Ordesto Machado
+Alta | Alta | Aprovado | 1 | Ivo Aurélio da Silva
+
+## RNF006 - Tolerância a Falhas
+O sistema da Instituição ABC deverá ser desenvolvido sempre pensando que suas dependências podem apresentar falhas e prosseguir o funcionamento normal ou restrito para as funcionalidades afetadas.
+
+Uma funcionalidade restringida deverá exibir um aviso informando que o sistema está com alguma instabilidade não permitindo o uso da mesma.
+
+Este requisito será validado utilizando-se de testes de usuário e testes de integração que irão forçar situações de exeção colocando o servidor em estresse com o objetivo de atender o modelo de confiabilidade da ISO/IEC 9126.
+
+| Prioridade | Complexidade | Status | Versão | Autor | 
+| :--- | :---: | :---: | :---: | :---: |
+Baixa | Alta | Elaborado | 1 | Felipe de Almeida, Stephanie Pinheiro Brazil
+Baixa | Alta | Revisado | 1 | Vinicius Rossoni Wagner, Tiago Ordesto Machado
+Baixa | Alta | Aprovado | 1 | Ivo Aurélio da Silva
+
+
+
+## Segurança
+## RNF007 Autenticação e Autorização
+Todas as partes do sistema expostas, que exijam controle de acesso, poderão ser acessadas por usuários cadastrados no sistema web utilizando-se de OAuth2.
+
+O sistema deverá permitir login via conta Facebook, Google ou Apple.
+
+O sistema não deverá permitir cache de senha, salvamento de senha ou qualquer outro recurso do tipo.
+Deverá haver uma política de segurança que assegure que, a cada mês, a senha de cada um dos usuários citados expire e precise ser renovada, e que tenha critérios de complexidade para fortalecer as senhas.
+
+| Prioridade | Complexidade | Status | Versão | Autor | 
+| :--- | :---: | :---: | :---: | :---: |
+Alta | Média | Elaborado | 1 | Felipe de Almeida, Stephanie Pinheiro Brazil
+Alta | Média | Revisado | 1 | Vinicius Rossoni Wagner, Tiago Ordesto Machado
+Alta | Média | Aprovado | 1 | Ivo Aurélio da Silva
+
+## RNF008 Bloqueio de IPs fora do Brasil
+Por os usuários serem brasileiros, a exceção de **alunos**, **professores**, **coordenadores** e **funcionários** fora do brasil, usuários não cadastrados fora do brasil devem ter acesso ao sistema bloqueado.
+
+Este requisito será validado utilizando-se de testes de usabilidade simulando acesso de usuários anonimos de fora do Brasil para antender o módulo de segurança da ISO/IEC 9126.
+
+| Prioridade | Complexidade | Status | Versão | Autor | 
+| :--- | :---: | :---: | :---: | :---: |
+Baixa | Média | Elaborado | 1 | Felipe de Almeida, Stephanie Pinheiro Brazil
+Baixa | Média | Revisado | 1 | Vinicius Rossoni Wagner, Tiago Ordesto Machado
+Baixa | Média | Aprovado | 1 | Ivo Aurélio da Silva
