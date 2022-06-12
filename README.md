@@ -4,6 +4,8 @@
 | :--- | :---: | :---: |
 **Instituição ABC** | Tiago Ordesto Machado, Felipe Rodrigues de Almeida, Stephanie Pinheiro Brazil, Vinicius Rossoni Wagner e Ivo Aurélio da Silva | **Data Versão:** 11/06/2022
 
+# 1. Especificação de Requisitos Funcionais
+
 ## RF001 - Tipos de usuário
 
 O sistema deverá disponibilizar uma interface para possibilitar a manutenção dos usuários do sistema. O sistema irá autenticar e autorizar os usuários. A autenticação deverá ocorrer mediante senha pré cadastrada na interface de manutenção de usuário e a autorização através da validação de perfil. Serão disponibilizados os seguintes perfis:
@@ -171,3 +173,5 @@ Antes de um usuário conectar, deverá ser perguntado ao usuário se os perifér
 Alta | Alta | Aprovado | 1 | Felipe de Almeida
 
 ## RF008
+
+# 2. Especificação de Requisitos Não Funcionais
