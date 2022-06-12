@@ -213,7 +213,6 @@ Baixa | Baixa | Revisado | 1 | Vinicius Rossoni Wagner, Tiago Ordesto Machado
 Baixa | Baixa | Aprovado | 1 | Ivo Aurélio da Silva
 
 ## RNF002 - Velocidade de Uso de Interface
-
 O sistema da Instituição ABC deverá ter um tempo de respostá de menos de 0.200ms para a tela ficar interágivel. Elementos que necessitem de mais tempo para carregarem deverão ser carregados em segundo plano.
 
 Este requisito será validado utilizando-se de testes de usabilidade e usando a ferramenta do Google Developers, Page Speed insights (https://pagespeed.web.dev/) com o objetivo de atender o modelo de usabilidade da ISO/IEC 9126.
@@ -292,10 +291,19 @@ Baixa | Alta | Elaborado | 1 | Felipe de Almeida, Stephanie Pinheiro Brazil
 Baixa | Alta | Revisado | 1 | Vinicius Rossoni Wagner, Tiago Ordesto Machado
 Baixa | Alta | Aprovado | 1 | Ivo Aurélio da Silva
 
+## RNF007 Disponibilidade Esperada
+O sistema por ter alunos que irão ficar no sistema assistindo aulas, buscando materiais e realizando tarefas por várias horas, deverá possuir uma disponibilidade de 99.0%.
 
+Este requisito será validado mensalmente e mudanças na infraestrutura podem ser aplicadas para manter a métrica em 99% ou acima.
+
+| Prioridade | Complexidade | Status | Versão | Autor | 
+| :--- | :---: | :---: | :---: | :---: |
+Alta | Alta | Elaborado | 1 | Felipe de Almeida, Stephanie Pinheiro Brazil
+Alta | Alta | Revisado | 1 | Vinicius Rossoni Wagner, Tiago Ordesto Machado
+Alta | Alta | Aprovado | 1 | Ivo Aurélio da Silva
 
 ## Segurança
-## RNF007 Autenticação e Autorização
+## RNF008 Autenticação e Autorização
 Todas as partes do sistema expostas, que exijam controle de acesso, poderão ser acessadas por usuários cadastrados no sistema web utilizando-se de OAuth2.
 
 O sistema deverá permitir login via conta Facebook, Google ou Apple.
@@ -309,13 +317,79 @@ Alta | Média | Elaborado | 1 | Felipe de Almeida, Stephanie Pinheiro Brazil
 Alta | Média | Revisado | 1 | Vinicius Rossoni Wagner, Tiago Ordesto Machado
 Alta | Média | Aprovado | 1 | Ivo Aurélio da Silva
 
-## RNF008 Bloqueio de IPs fora do Brasil
+## RNF009 Bloqueio de IPs fora do Brasil
 Por os usuários serem brasileiros, a exceção de **alunos**, **professores**, **coordenadores** e **funcionários** fora do brasil, usuários não cadastrados fora do brasil devem ter acesso ao sistema bloqueado.
 
-Este requisito será validado utilizando-se de testes de usabilidade simulando acesso de usuários anonimos de fora do Brasil para antender o módulo de segurança da ISO/IEC 9126.
+Este requisito será validado utilizando-se de testes de segurança de simulando acesso de usuários anonimos de fora do Brasil para antender o módulo de segurança da ISO/IEC 9126.
 
 | Prioridade | Complexidade | Status | Versão | Autor | 
 | :--- | :---: | :---: | :---: | :---: |
 Baixa | Média | Elaborado | 1 | Felipe de Almeida, Stephanie Pinheiro Brazil
 Baixa | Média | Revisado | 1 | Vinicius Rossoni Wagner, Tiago Ordesto Machado
 Baixa | Média | Aprovado | 1 | Ivo Aurélio da Silva
+
+## RNF010 Identificação e bloqueio de Ataques de Negação (Denial of Service) individuais
+O sistema deve conseguir identificar e bloquear ips que tenham como alvo vítimas individuais, como por exemplo, deliberadamente colocar uma senha errada várias vezes para bloquear o acesso de uma vítima.
+
+Este requisito será validado utilizando-se de testes de segurancá simulando ataques para antender o módulo de segurança da ISO/IEC 9126.
+
+## Restrições
+## RNF011 Restrição de linguagem de programação
+O sistema deverá ser desenvolvindo utilizando-se das seguintes tecnologias:
+- Framework Vue.js para o front-end utilizando-se de JavaScript
+- Framework .NET 6 para o back-end utilizando-se de C#
+
+| Prioridade | Complexidade | Status | Versão | Autor | 
+| :--- | :---: | :---: | :---: | :---: |
+Alta | Baixa | Elaborado | 1 | Felipe de Almeida, Stephanie Pinheiro Brazil
+Alta | Baixa | Revisado | 1 | Vinicius Rossoni Wagner, Tiago Ordesto Machado
+Alta | Baixa | Aprovado | 1 | Ivo Aurélio da Silva
+
+## RNF012 Restrição de banco de dados
+O sistema deverá ser desenvolvindo utilizando o banco de dados SQL Server providenciado pela Azure. 
+
+Para os seguintes ambientes de desenvolvimento serão utilizados os seguintes níveis de bancos:
+| Ambiente | Nível |
+| :--- | :---: |
+Desenvolvimento | B1
+Homologação | S1
+Produção | P3V2
+
+
+| Prioridade | Complexidade | Status | Versão | Autor | 
+| :--- | :---: | :---: | :---: | :---: |
+Alta | Baixa | Elaborado | 1 | Felipe de Almeida, Stephanie Pinheiro Brazil
+Alta | Baixa | Revisado | 1 | Vinicius Rossoni Wagner, Tiago Ordesto Machado
+Alta | Baixa | Aprovado | 1 | Ivo Aurélio da Silva
+
+## RNF013 Restrições de padrões de desenvolvimento
+O sistema deverá ser desenvolvindo atendendo os seguintes padrões: 
+- CQS - Command Query Separation (https://www.wellingtonjhn.com/posts/cqs---command-query-separation/) tanto no front-end quanto no back-end
+- Atomic Design (https://evertonstrack.com.br/atomic-design/) para o desenvolvimento de componentes no front-end.
+- Padrão Estrangulamento (https://medium.com/codigorefinado/strangle-design-pattern-o-padr%C3%A3o-estrangulamento-f93c05e9061d) para a utilização de funcionalidades do sistema legado enquanto novas estão sendo desenvolvidas.
+
+
+| Prioridade | Complexidade | Status | Versão | Autor | 
+| :--- | :---: | :---: | :---: | :---: |
+Alta | Baixa | Elaborado | 1 | Felipe de Almeida, Stephanie Pinheiro Brazil
+Alta | Baixa | Revisado | 1 | Vinicius Rossoni Wagner, Tiago Ordesto Machado
+Alta | Baixa | Aprovado | 1 | Ivo Aurélio da Silva
+
+## RNF014 Restrição de provedor de nuvem Azure
+O sistema deverá ser desenvolvido utilizando somente serviços disponibilizados pela Microsoft Azure.
+
+| Prioridade | Complexidade | Status | Versão | Autor | 
+| :--- | :---: | :---: | :---: | :---: |
+Alta | Baixa | Elaborado | 1 | Felipe de Almeida, Stephanie Pinheiro Brazil
+Alta | Baixa | Revisado | 1 | Vinicius Rossoni Wagner, Tiago Ordesto Machado
+Alta | Baixa | Aprovado | 1 | Ivo Aurélio da Silva
+
+## RNF015 Restrição de sistema legado
+O sistema deverá suportar todas as funcionalidades que o sistema legado suportava.
+Todos os dados de alunos, professores, coordenadores e funcionários existentes deverão ser migrados para o banco de dados SQL Server na Azure.
+
+| Prioridade | Complexidade | Status | Versão | Autor | 
+| :--- | :---: | :---: | :---: | :---: |
+Alta | Baixa | Elaborado | 1 | Felipe de Almeida, Stephanie Pinheiro Brazil
+Alta | Baixa | Revisado | 1 | Vinicius Rossoni Wagner, Tiago Ordesto Machado
+Alta | Baixa | Aprovado | 1 | Ivo Aurélio da Silva
