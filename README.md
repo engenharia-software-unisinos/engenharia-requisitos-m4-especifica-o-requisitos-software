@@ -35,10 +35,14 @@ Na tela do curso, existirá um botão que permitirá a edição dos seguintes da
 - Decrição
 - Turno 
 - Materiais (Arquivos que disponibilizados para o **Aluno**)
+- Eventos (Aulas marcadas pelo **Professor**)
 - Tarefas (**##RF004**)
 - Alunos (**RF005**)
 
 Ao clicar em salvar, o sistema irá validar as informações para checar se nenhuma está vazia ou inválida.
+
+Os **Professores** poderão agendar Eventos online que irão notificar todos os **Alunos** envolvidos no curso sobre quando o mesmo irá ocorrer.
+Os **Professores** poderão adicionar todo tipo de arquivo digital a lista de materiais e os **Alunos** irão poder baixar os mesmos.
 
 **Alunos** poderão somente vizualizar as informações do curso, baixar materiais e interagir com as tarefas para ler e realizar entregas.
 
@@ -104,6 +108,7 @@ _O **Aluno** poderá ativar ou desativar as seguintes notificações_
 - Notificar tarefa pontuada
 - Notificar curso criado
 - Notificar curso alterado
+- Notificar evento de curso criado
 - Notificar material adicionado a curso
 
 O **Aluno** também podera vizualizar os cursos do qual faz parte juntamente do seu calendário. 
@@ -142,3 +147,27 @@ Em caso de falha no pagamento, o **Aluno** irá receber um e-mail avisando que o
 | Prioridade | Complexidade | Status | Versão | Autor | 
 | :--- | :---: | :---: | :---: | :---: |
 Alta | Alta | Aprovado | 1 | Felipe de Almeida
+
+## RF007 Aula Online
+O sistema deverá permitir que um professor agende um **Evento** (**RF002**) contendo o nome e a data do mesmo. Na data do evento, o sistema deverá criar e disponibilizar uma sala online onde tanto **Professores** quanto **Alunos** consigam conectar e utilizar seus periféricos de vídeo, áudio e captura de áudio para se comunicar por vídeo e voz.
+
+A funcionalidade de Aula Online deverá suportar as seguintes ações para todos os usuários:
+- Mutar ou desmutar a si mesmo
+- Ligar/Desligar vídeo
+- Compartilhar/Descompartilhar tela
+
+A funcionalidade de Aula Online deverá suportar as seguintes ações para os **Professores**:
+- Mutar/Desmutar **Aluno** específico
+- Mutar/Desmutar todos os **Alunos**
+- Criar salas secundárias para dividir os **Alunos** em grupos
+- Descriar salas secundárias e trazer todos as **Alunos** de volta a sala original
+- Criar enquetes e exibir os resultados da mesma
+- Desenhar na tela durante o compartilhamento de tela
+
+Antes de um usuário conectar, deverá ser perguntado ao usuário se os periféricos selecionados estão corretos.
+
+| Prioridade | Complexidade | Status | Versão | Autor | 
+| :--- | :---: | :---: | :---: | :---: |
+Alta | Alta | Aprovado | 1 | Felipe de Almeida
+
+## RF008
