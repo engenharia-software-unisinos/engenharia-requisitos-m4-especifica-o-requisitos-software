@@ -336,10 +336,12 @@ O sistema deverá suportar as seguintes versões de cada sistema operacional:
 - Vista 8
 - Windows 10
 - Windows 11
+- 
 **Linux**
 - 16.04
 - 20.04
 - 21.04
+- 
 **Mac**
 - Monteray
 - Big Sur
