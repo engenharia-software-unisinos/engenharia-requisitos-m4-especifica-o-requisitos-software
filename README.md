@@ -330,6 +330,7 @@ Média | Baixa | Aprovado | 1 | Ivo Aurélio da Silva
 
 ## RNF004 - Compatibilidade com sistemas operacionais Windows, Mac e Linux
 O sistema deverá suportar as seguintes versões de cada sistema operacional:
+
 **Windows**
 - XP
 - Vista 7
